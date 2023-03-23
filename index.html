@@ -24,26 +24,26 @@
         <figure class="logo">
             <img src="img/logo.jpg" alt="Aarhus Bridgeklubs logo">
         </figure>
-        <nav>
-            <ul class="nav-ul">
-                <li>
+        <nav class="header-nav">
+            <ul class="menu-ul">
+                <li class="nav-list active">
                     <a href="">Hjem</a>
                 </li>
-                <li>
+                <li class="nav-list">
                     <a href="">Events</a>
                 </li>
-                <li>
+                <li class="nav-list">
                     <a href="">Historie</a>
                 </li>
-                <li>
+                <li class="nav-list">
                     <a href="">Medlemskab</a>
                 </li>
-                <li>
+                <li class="nav-list">
                     <a href="">Kontakt os</a>
                 </li>
             </ul>
         </nav>
-        <ul>
+        <ul class="social-menu">
             <li>
                 <img src="img/icon-facebook.png" alt="Facebook Logo">
             </li>
@@ -54,6 +54,12 @@
                 <img src="img/icon-gplus.png" alt="Google Plus Logo">
             </li>
         </ul>
+        <div class="hidden-menu-btn">
+            <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+        </div>
     </header>
     <div class="banner">
         <div class="cover">
@@ -68,12 +74,12 @@
             <section class="mid-column">
                 <div class="content-card">
                     <h1>Velkommen til Aarhus Bridgeklub</h1>
-                    <figure class="content-card-img">
+                    <figure class="content-img">
                         <img src="img/bridge-tournament.jpg" alt="Billede oppefra af en omgrang bridge">
                     </figure>
-                    <div class="content-card-wrapper">
+                    <div class="content-wrapper">
                         <p>Velkommen til Aarhus Bridgeklub, som blev oprettet helt tilbage i 1934 og derfor er den ældste bridgeklub i Jylland.</p>
-                        <p>Klubben er for alle, som kan lide at spille bridge uanset alder og niveau. Hvis du er nybegynder eller bare nysgerrig kan du komme på en af vores klubaftener og få en demonstration</p>
+                        <p>Klubben er for alle, som kan lide at spille bridge uanset alder og niveau. Hvis du er nybegynder eller bare nysgerrig kan du komme på en af vores klubaftener og få en demonstration.</p>
                         <div class="button">
                             <a href="">Læs mere</a>
                         </div>
@@ -82,21 +88,101 @@
 
                 <div class="container">
                     <div class="content-card">
-                        <p>Velkommen til Aarhus Bridgeklub, som blev oprettet helt tilbage i 1934 og derfor er den ældste bridgeklub i Jylland.</p>
-                        <p>Klubben er for alle, som kan lide at spille bridge uanset alder og niveau. Hvis du er nybegynder eller bare nysgerrig kan du komme på en af vores klubaftener og få en demonstration</p>
-                        <div class="button">
-                            <a href="">Læs mere</a>
+                        <h1>Klubaftener</h1>
+                        <figure class="content-img">
+                            <img src="img/bridge-01.jpg" alt="">
+                        </figure>
+                        <div class="content-wrapper">
+                            <p>To gange om ugen afholdes der klubaftener, hvor du kan komme og spille eller nyde det sociale samvær.</p>
+                            <div class="button">
+                                <a href="">Læs mere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h1>Medlemskab</h1>
+                        <figure class="content-img">
+                            <img src="img/bridge-02.jpg" alt="">
+                        </figure>
+                        <div class="content-wrapper">
+                            <p>Kontigent for medlemskab kan betales månedligt eller årligt. Klik og se en oversigt over de aktuelle priser.</p>
+                            <div class="button">
+                                <a href="">Læs mere</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="aside-column">
-
+                <div class="content-card">
+                    <h1>Event Kalender</h1>
+                    <ul>
+                        <li>
+                            <p>29-05-18</p>
+                            <div>
+                                <a href="">Klubmesterskab 2018</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p>22-05-18</p>
+                            <div>
+                                <a href="">DM kvalifikation</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p>07-05-18</p>
+                            <div>
+                                <a href="">Mandagsklubbens majturnering</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p>02-05-18</p>
+                            <div>
+                                <a href="">Majturnering 2018 Onsdag aften</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p>29-04-18</p>
+                            <div>
+                                <a href="">Aabent hus</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-card news-letter">
+                    <h1>Nyhedsbrev</h1>
+                    <form class="content-card-form">
+                        <p>Tilmeld dig vores nyhedsbrev og modtag alle nyheder om klubben direkte i din indbakke.</p>
+                        <input type="text" name id="name" placeholder="Dit navn">
+                        <input type="email" name id="email" placeholder="Din email">
+                        <input type="submit" value="Tilmeld" class="button">
+                    </form>
+                </div>
             </section>
         </div>
     </main>
     <footer>
-
+        <div class="content-wrapper">
+            <div>
+                <h1>Kontakt Os</h1>
+                <ul>
+                    <li>Aarhus Bridgeklub</li>
+                    <li>Vanggaardcentret</li>
+                    <li>Paludan Müllersvej 26</li>
+                    <li>8200 Aarhus N</li>
+                    <li>www.aarhusbridgeklub.dk</li>
+                    <li>aabk@aarhusbridgeklub.dk</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Historie</h1>
+                <p>AaBK stiftedes i september 1934. Stifterne var "en kreds af bridgeinteresserede medlemmer af Selskabet Polyhymnia og handels- og Kontoristforeningen". AaBK var således den første forening i Aarhus, der havde bridgespil som hovedformål</p>
+            </div>
+            <div>
+                <h1>Bliv Medlem</h1>
+                <p>Aarhus Bridgeklub er for alle, som kan lide at spille og samtidig nyde masser af socialt samvær. Alder, køn og race er derfor inden hindring. Du skal være så hjertelig velkommen.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
